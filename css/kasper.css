@@ -312,12 +312,12 @@ header nav .form i {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   height: 600px;
-  background-image: url(../images/design-features.jpg);
+  position: relative;
+  background-image: url("../images/design-features.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
+  overflow: hidden;
 }
 .design::before {
   content: "";
@@ -332,6 +332,7 @@ header nav .form i {
 .design .text {
   position: relative;
   z-index: 2;
+  flex: 1;
 }
 .design .image {
   text-align: center;
